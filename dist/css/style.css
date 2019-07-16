@@ -2,11 +2,12 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #b90415;
+  --primary-color: #d94747;
   --primary-color-hover: #d3071b;
-  --secondary-color: #103063;
+  --secondary-color: #3D5975;
   --secondary-color-hover: #143f85;
   --light-color: #f4f4f4;
+  --title-color: #000000;
 }
 
 body {
@@ -31,6 +32,19 @@ a {
   padding: 2rem 0;
 }
 
+.section-main h1{
+  text-align: center;
+  padding-top: 250px; 
+}
+.section-main i {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+.section-main i:hover {
+  font-size: 6rem;
+  transition: font-size 0.5s ease-in-out;
+}
+
 .section-head {
   font-size: 2.5rem;
   margin: 0;
@@ -41,8 +55,11 @@ a {
 }
 
 section#entertainment {
-  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+  background: url(../img/bateau-avion.jpg) no-repeat bottom/cover;
+  background-attachment: fixed;
+  position: relative;
   padding: 10rem 0;
+  height: 150vh;
 }
 
 .gift-cards {
@@ -56,7 +73,8 @@ section#entertainment {
 #showcase {
   margin: 0;
   padding: 0;
-  background: url('../img/showcase.jpg') no-repeat center/cover;
+  background: url('../img/bateau.jpg') no-repeat center/cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -68,12 +86,10 @@ section#entertainment {
 }
 
 #showcase h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0;
-}
-
-#showcase h2 {
-  font-size: 2rem;
+  color: var(--light-color);
+  top: 100px;
 }
 
 /* Footer */
@@ -93,12 +109,12 @@ footer .footer-cols ul {
 footer .footer-cols ul li:first-child {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
-  border-bottom: #444 solid 1px;
+  border-bottom: var(--light-color) solid 1px;
   margin-bottom: 1rem;
 }
 
 footer .footer-bottom {
-  background: #333;
+  background: var(--light-color);
   padding: 1rem;
 }
 
@@ -142,12 +158,40 @@ footer .footer-bottom {
 }
 
 /* Text colors */
-.text-primary {
-  color: var(--primary-color);
+.title-primary {
+  position: relative;
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  color: var(--title-color);
+  z-index: 0;
+}
+.title-primary:after {
+  transition: 500ms;
+    -webkit-transition: 0.5s;
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 10px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: var(--primary-color);
 }
 
-.text-secondary {
+.title-primary:hover::after {
+  width: 100%;
+  transition-duration: 500ms;
+  
+}
+
+.title-secondary {
   color: var(--secondary-color);
+  font-size: 1rem;
+  padding: 20px 20px;
+  text-align: start;
 }
 
 .text-light {
@@ -156,9 +200,11 @@ footer .footer-bottom {
 
 .bg-light {
   background: var(--light-color);
-  color: #333;
+  color: var(--light-color);
 }
-
+.bg-grey  {
+  background: rgba(247, 247, 247, 1);
+}
 .mb {
   margin-bottom: 1rem;
 }
@@ -168,37 +214,182 @@ footer .footer-bottom {
 }
 
 /* Navigation */
+
 nav {
-  height: 40px;
+  height: 100px;
   width: 100%;
-  background-color: #333;
-  color: #eee;
+  background-color: var(--light-color);
+  color: #333;
   position: fixed;
+  padding: 0 0;
+  z-index: 2;
+  
 }
-nav ul {
+
+nav ul{
+  
   padding: 0;
+  margin: 0;
+}
+nav ul .li{
+  padding: 0px;
   margin: 0;
 }
 nav li {
   display: inline;
+  float: right;
+  padding-right: 10px; 
+}
+
+.logo {
+  height: 100px;
+  width: 300px;
+  background-color: var(--primary-color);
   float: left;
+  color: var(--light-color);
+  text-align: center;
+  
+}
+
+.logo img{
+  float: left;
+  width: 47px; height: 49px; object-fit: contain;
+}
+.logo p {
+  font-size: 23px;
 }
 nav a {
   display: inline-block;
-  width: 100px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
-  color: #eee;
+  color: #333;
   text-decoration: none;
+  border-top: 2px solid #333;
+  text-decoration: none;
+  text-decoration-style: none;
 }
-nav li:hover {
-  background-color: #444;
+
+nav a:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 nav a#openup {
   display: none;
+}ƒ
+
+
+/* Cards Section */
+.card-title {
+  text-align: left;
+  font-size: 1rem;
+  padding: 50px 0 50px 0; 
 }
 
+/* after cards section */
+.container-bottom-right{
+  width: 800px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 50px 0 50px 200px;
+  color: #000000
+}
+.container-bottom-right h2{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.container-bottom-right p{
+  font-weight: 100;
+}
+
+.container-bottom-left {
+  width: 408px;
+  height: 482px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  padding: 100px 0px 50px 50px;
+}
+.container-bottom-left div {
+  position: absolute;
+}
+.container-bottom-left div h1 {
+  float: left;
+  width: 50px;
+  font-size: 9rem
+}
+.container-bottom-left div h3 {
+  bottom: 0;
+  margin-top: 100px;
+  overflow-x:hidden;
+}
+
+/* Confiance section */
+.confiance {
+  padding: 70px 0;
+}
+.confiance-p {
+  padding: 50px 0;
+  color: #333;
+  font-size: 2rem;
+}
+section.confiance-next {
+  background: url(../img/camion.jpg) no-repeat bottom/cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 150vh;
+}
+
+.confiance-container-bottom-right{
+  width: 800px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 50px 200px 50px 50px;
+  color: #000000
+}
+.confiance-container-bottom-right h2{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.confiance-container-bottom-right p{
+  font-weight: 100;
+}
+
+.confiance-container-bottom-left {
+  width: 408px;
+  height: 482px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  padding: 100px 0px 50px 50px;
+  z-index: 1;
+}
+.confiance-container-bottom-left div {
+  position: absolute;
+}
+.confiance-container-bottom-left div h1 {
+  float: left;
+  width: 50px;
+  font-size: 9rem
+}
+.confiance-container-bottom-left div h3 {
+  bottom: 0;
+  margin-top: 100px;
+  overflow-x:hidden;
+}
+.confiance-container-bottom-left ul {
+  padding: 50px 0; 
+  font-size: 1rem;
+}
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
@@ -237,7 +428,7 @@ nav a#openup {
     text-align: left;
     width: 100%;
     text-indent: 25px;
-    background: #333;
+    background: var(--light-color);
     border-bottom: 1px solid #555;
   }
   nav a:hover {
@@ -259,7 +450,7 @@ nav a#openup {
   }
   nav a#openup {
     display: block;
-    background-color: #333;
+    background-color: var(--light-color);
     width: 100%;
     position: relative;
   }
@@ -277,6 +468,7 @@ nav a#openup {
 .cf {
   zoom: 1;
 }
+
 
 @media screen and (max-width: 780px) {
   .gift-cards {

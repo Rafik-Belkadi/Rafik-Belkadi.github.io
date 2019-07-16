@@ -24,20 +24,10 @@ $(function() {
 });
 
 // Smooth Scrolling
-$('.cf a').on('click', function(event) {
-  if (this.hash !== '') {
-    event.preventDefault();
 
-    const hash = this.hash;
-
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800,
-      function() {
-        window.location.hash = hash;
-      }
-    );
-  }
+$('.scrollTo').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 500);
+  return false;
 });

@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Welcome to myTunes</title>
 </head>
@@ -16,191 +19,171 @@
   <!-- Showcase & Nav -->
   <div id="showcase">
     <header>
-      <nav class='cf'>
-        <ul class='cf'>
-          <li class="hide-on-small">
-            <a href="#showcase">myTunes</a>
-          </li>
-          <li>
-            <a href='#showcase'>Overview</a>
-          </li>
-          <li>
-            <a href='#music'>Music</a>
-          </li>
-          <li>
-            <a href='#video'>Video</a>
-          </li>
-          <li>
-            <a href='#gift-cards'>Gift Cards</a>
-          </li>
-        </ul>
-        <a href='#' id='openup'>myTunes</a>
-      </nav>
-    </header>
-    <div class="section-main container">
-      <h1>myTunes.</h1>
-      <h2>Your music, movies, and TV shows take center stage.</h2>
-      <p class="lead hide-on-small">
-        myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you
-        want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.
-      </p>
-    </div>
+      <div class="row" style="margin: 0px;">
+        <nav class='cf'>
+          <ul class='cf'>
+            <div class="col-md-4" style="margin-left: -15px;">
+              <li class="logo">
+                <div>
+                  <img src="/dist/img/c19c76_e1ee443d4c5e4e3197a25eec7a0a97e5.webp" style="left: 60px; position: absolute; top: 25px; width: 47px; height: 49px;" />
+                </div>
+                <div>
+                  <p style="left: 73px; width: 209px; position: absolute; pointer-events: none; top: 20px;">TRANS MS
+                    <br> ALGERIE </p>
+                </div>
+              </li>
+            </div>
+            <div class="col-md-12 cf" style="margin-top: 50px;">
+              <li>
+                <a href='#video' class="scrollTo">Nous Contacter</a>
+              </li>
+              <li>
+                <a href='#music' class="scrollTo">Notre Confiance</a>
+              </li>
+
+              <li>
+                <a href='#Transport' class="scrollTo">Transport</a>
+              </li>
+              <li class="hide-on-small">
+                <a href="#showcase" class="scrollTo">Acceuil</a>
+              </li>
+            </div>
+          </ul>
+          <a href='#' id='openup'>myTunes</a>
+        </nav>
+      </div>
+      <div class="section-main container" id="acceuil">
+        <h1>VOTRE PARTENAIRE LOGISTIQUE</h1>
+        <a href="#Transport" class="scrollTo"><i class="fas fa-chevron-down"></i></a>
+      </div>
+  </div>
+  </header>
   </div>
 
-  <!-- Music Section -->
-  <section id="music" class="section">
-    <div class="container">
-      <h2 class="section-head">
-        <i class="fas fa-music"></i> Music
-      </h2>
-      <h3>45 million songs. Zero ads.</h3>
-      <p class="lead">Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal
-        myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free
-        three-month trial with no commitment, and cancel anytime.</p>
-      <a href="#" class="btn btn-primary mb">Start Your Trial Now</a>
-      <p class="text-light">Orange Music is available in myTunes, and for iOS and Android devices.</p>
-      <img src="img/mockup1.png" alt="">
-    </div>
-  </section>
-
   <!-- Video Section -->
-  <section id="video" class="section bg-light">
+  <section id="Transport" class="section bg-light">
     <div class="container">
-      <h3>The movie and TV collection you always wished for. Granted.</h3>
-      <p class="lead">With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you
-        watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get
-        ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just
-        tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
-      <a href="#" class="btn btn-secondary">Read More</a>
-      <img src="img/mockup2.png" alt="">
-    </div>
-  </section>
+      <h1 class="title-primary">NOS <br> DEDOUANEMENTS</h1>
+      <div class="container ">
+        <div class="row justify-content-center" style="margin-left: 80px;">
+          <div class="col-md-6">
+            <div class="card" style="width:20rem;margin:20px 0 24px 0">
+              <img class="card-img-top" style="width: 318px; height: 240px;" src="img/bateau-avion.jpg" alt="image"
+                style="width:100%">
+              <div class="card-body bg-grey">
+                <h4 class="card-title title-secondary">DEDOUANEMENT AERIEN</h4>
+                <p class="card-text text-dark" style="text-align: left; padding: 20px 20px;">Sara trans ms est un
+                  prestataire de service en
+                  evolution, mais
+                  sans jamais perdre de vue que l’objectif est d’offrir u service
+                  personnalisé aux clients. Les clients
+                  nous sollicitent
+                  pour notre éventail de solutions
+                  Dans le dédouanement et
+                  transport ainsi que la logistique</p>
+              </div>
+            </div>
 
-  <!-- Entertainment Section -->
-  <section id="entertainment" class="section">
-    <div class="container">
-      <h3>A world of entertainment. Available wherever you are.</h3>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit
-        explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque
-        in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium
-        soluta delectus!</p>
-    </div>
-  </section>
-
-  <!-- Gift Card Section -->
-  <section id="gift-cards" class="section bg-light">
-    <div class="container">
-      <div class="gift-cards">
-        <div>
-          <img src="img/cards.png" alt="">
-        </div>
-        <div>
-          <h2>Gift Cards</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus
-            dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
-            molestias veritatis porro.
-          </p>
-          <p>Already have an Orange MyTunes Music Gift Card?</p>
-          <hr>
-          <a href="#" class="text-secondary">
-            <i class="fas fa-chevron-right"></i> Redeem
-          </a>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="width:20rem;margin:20px 0 24px 0">
+              <img class="card-img-top" src="img/contenaire.webp" alt="image" style="width:100%">
+              <div class="card-body bg-grey">
+                <h4 class="card-title title-secondary">DEDOUANEMENT MARITIME</h4>
+                <p class="card-text text-dark" style="text-align: left; padding: 20px 20px;">Sara trans ms est un
+                  prestataire de service en
+                  evolution, mais
+                  sans jamais perdre de vue que l’objectif est d’offrir u service
+                  personnalisé aux clients. Les clients
+                  nous sollicitent
+                  pour notre éventail de solutions
+                  Dans le dédouanement et
+                  transport ainsi que la logistique</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+
+  <!-- Entertainment Section -->
+  <section id="entertainment" class="section">
+    <div class="container-bottom-right">
+      <h2>Vos Besoins,Nos Solutions</h2>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut
+        expedita, doloribus reprehenderit
+        explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat
+        cumque
+        in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam
+        laudantium
+        soluta delectus!</p>
+    </div>
+    <div class="container-bottom-left">
+      <div>
+        <h1>7</h1>
+        <h3>Jours</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora soluta, eaque asperiores blanditiis
+          explicabo quia reiciendis vitae ipsum modi magni eos voluptatem pariatur earum mollitia ut vero cum
+          voluptatibus consectetur voluptatum delectus error cumque quae unde consequuntur? Ex pariatur eius
+          doloremque, voluptatum tempora quos necessitatibus in! Praesentium, animi eum! Atque?</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Confiance Section -->
+  <section id="confiance" class="section bg-light">
+    <div class="container confiance">
+      <h1 class="title-primary">Pourquoi nous faire <br> confiance ?</h1>
+      <div class="container center">
+        <p class="confiance-p">
+          Sara trans ms est un prestataire de service en evolution, mais sans jamais perdre de vue que l’objectif est
+          d’offrirun service personnalisé aux clients.
+
+          Les clients nous sollicitent pour notre évenide solutions Dans le dédouanement et transport ainsi que la
+          logistique
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section confiance-next">
+    <div class="confiance-container-bottom-right">
+      <div>
+        <h1>SARL TRANS INTERGLOB</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora soluta, eaque asperiores blanditiis
+          explicabo quia reiciendis vitae ipsum modi magni eos voluptatem pariatur earum mollitia ut vero cum
+          voluptatibus consectetur voluptatum delectus error cumque quae unde consequuntur? Ex pariatur eius
+          doloremque, voluptatum tempora quos necessitatibus in! Praesentium, animi eum! Atque?</p>
+      </div>
+    </div>
+    <div class="confiance-container-bottom-left">
+      <h2>NOS MOYENS :</h2>
+      <ul>
+        <li>Camion semi remorque</li>
+        <li>Porte char</li>
+        <li>Croutons</li>
+      </ul>
+    </div>
+
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <div class="footer-cols">
-        <ul>
-          <li>Shop & Learn</li>
-          <li>
-            <a href="#">Music</a>
-          </li>
-          <li>
-            <a href="#">Movies</a>
-          </li>
-          <li>
-            <a href="#">Shows</a>
-          </li>
-          <li>
-            <a href="#">Apps</a>
-          </li>
-          <li>
-            <a href="#">Gift Cards</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>Orange Store</li>
-          <li>
-            <a href="#">Find a Store</a>
-          </li>
-          <li>
-            <a href="#">Today at Orange</a>
-          </li>
-          <li>
-            <a href="#">Orange Camp</a>
-          </li>
-          <li>
-            <a href="#">Financing</a>
-          </li>
-          <li>
-            <a href="#">Order Status</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>Education & Business</li>
-          <li>
-            <a href="#">Orange & Education</a>
-          </li>
-          <li>
-            <a href="#">Shop For College</a>
-          </li>
-          <li>
-            <a href="#">Orange & Business</a>
-          </li>
-          <li>
-            <a href="#">Shop For Business</a>
-          </li>
-          <li>
-            <a href="#">Jobs</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>About Orange</li>
-          <li>
-            <a href="#">Newsroom</a>
-          </li>
-          <li>
-            <a href="#">Orange Leadership</a>
-          </li>
-          <li>
-            <a href="#">Investors</a>
-          </li>
-          <li>
-            <a href="#">Events</a>
-          </li>
-          <li>
-            <a href="#">Contact Orange</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      Copyright &copy; 2018 Orange myTunes
+    <div class="footer-bottom text-center bg-dark">
+      Copyright &copy; 2019 Samy Et Rafik
     </div>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
