@@ -312,11 +312,12 @@ nav a#openup {
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
-  left: 200px;
+  left: -40%;
   padding: 100px 0px 50px 50px;
 }
 .container-bottom-left div {
   position: absolute;
+  color: #fff
 }
 .container-bottom-left div h1 {
   float: left;
@@ -326,7 +327,6 @@ nav a#openup {
 .container-bottom-left div h3 {
   bottom: 0;
   margin-top: 100px;
-  overflow-x:hidden;
 }
 
 /* Confiance section */
@@ -369,12 +369,13 @@ section.confiance-next {
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
-  right: 200px;
+  right: -40%;
   padding: 100px 0px 50px 50px;
   z-index: 1;
 }
-.confiance-container-bottom-left div {
+.confiance-container-bottom-left {
   position: absolute;
+  color: #fff;
 }
 .confiance-container-bottom-left div h1 {
   float: left;
