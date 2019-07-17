@@ -16,6 +16,7 @@ body {
   margin: 0;
   color: #fff;
   line-height: 1.6;
+  width: 100%;
 }
 
 img {
@@ -30,6 +31,7 @@ a {
 /* Section */
 .section {
   padding: 2rem 0;
+  width: 100%
 }
 
 .section-main h1{
@@ -391,7 +393,14 @@ section.confiance-next {
   padding: 50px 0; 
   font-size: 1rem;
 }
+.row.justify-content-center{
+  margin-left: 80px;
+}
+.hide-on-big{
+  display: none;
+}
 @media screen and (max-width: 580px) {
+  body, html { overflow-x:hidden; }
   .hide-on-small {
     display: none;
   }
@@ -450,11 +459,60 @@ section.confiance-next {
     top: 20px;
   }
   nav a#openup {
+    margin: 10px 0;
     display: block;
     background-color: var(--light-color);
     width: 100%;
     position: relative;
   }
+
+
+.logo {
+  margin-bottom: 10px;
+}
+#acceuil h1 {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  left: 10%;
+  font-size: 2rem;
+}
+.title-primary{
+  padding: 0;
+  font-size: 2rem;
+}
+#Transport .container{
+  padding: 0;
+}
+.row.justify-content-center{
+  margin-left: 0;
+}
+
+.container-bottom-right{
+  width: 60%;
+  height: 50%;
+}
+.container-bottom-left{
+  width: 80%;
+}
+.hide-on-big{
+  display: block;
+}
+.confiance-p {
+  font-size: 1rem;
+}
+.white{
+  color: #fff;
+}
+.confiance-container-bottom-left{
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  padding: 10px 20px;
+  margin: 0;
+  height: 400px;
+  width: 80%;
+}
 }
 .cf:before,
 .cf:after {
@@ -472,6 +530,7 @@ section.confiance-next {
 
 
 @media screen and (max-width: 780px) {
+  body, html { overflow-x:hidden; }
   .gift-cards {
     grid-template-columns: 1fr;
   }
