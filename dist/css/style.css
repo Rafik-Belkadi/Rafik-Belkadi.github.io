@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Helvetica','PT Sans', sans-serif;
   background-color: #252529;
   margin: 0;
   color: #fff;
@@ -338,7 +338,8 @@ nav a#openup {
 .confiance-p {
   padding: 50px 0;
   color: #333;
-  font-size: 2rem;
+  font-size: 22px;
+  line-height: 1.9;
 }
 section.confiance-next {
   background: url(../img/camion.jpg) no-repeat bottom/cover;
@@ -355,7 +356,8 @@ section.confiance-next {
   bottom: 0;
   left: 0;
   padding: 50px 200px 50px 50px;
-  color: #000000
+  color: #000000;
+  font-size: 22px;
 }
 .confiance-container-bottom-right h2{
   font-weight: bold;
@@ -363,6 +365,7 @@ section.confiance-next {
 }
 .confiance-container-bottom-right p{
   font-weight: 100;
+  font-size: 22px;
 }
 
 .confiance-container-bottom-left {
@@ -378,6 +381,7 @@ section.confiance-next {
 .confiance-container-bottom-left {
   position: absolute;
   color: #fff;
+  font-size: 22px;
 }
 .confiance-container-bottom-left div h1 {
   float: left;
@@ -393,11 +397,70 @@ section.confiance-next {
   padding: 50px 0; 
   font-size: 1rem;
 }
+.confiance-container-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  padding: 50px 50px;
+  color: #5B86B0;
+  font-size: 22px;
+}
 .row.justify-content-center{
   margin-left: 80px;
 }
 .hide-on-big{
   display: none;
+}
+
+.slide img {
+  width: 100px;
+  height: 200px;
+}
+#Contact {
+  height: 90vh;
+  width: 100%;
+  background-color: #d94747;
+}
+#contact-div {
+  padding: 50px 15px;
+  text-align: center;
+  display: block;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 50px;
+}
+#contact-form input, #contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #333;
+  transition: .5s ease all;
+}
+#contact-form button {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #d94747;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .5s ease all;
+}
+.info {
+  text-align: start;
+  padding: 15px 60px;
+}
+.contact-local{
+  padding-top: 50px;
 }
 @media screen and (max-width: 580px) {
   body, html { overflow-x:hidden; }
@@ -512,6 +575,12 @@ section.confiance-next {
   margin: 0;
   height: 400px;
   width: 80%;
+}
+.contact-local p,h2{
+  opacity: 0;
+}
+.contact-local iframe {
+  height: 600px;
 }
 }
 .cf:before,
