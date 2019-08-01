@@ -88,7 +88,7 @@ section#entertainment {
 }
 
 #showcase h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
   color: var(--light-color);
   top: 100px;
@@ -179,7 +179,7 @@ footer .footer-bottom {
     width: 50px;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 30px auto;
     background: var(--primary-color);
 }
 
@@ -242,7 +242,6 @@ nav li {
   float: right;
   padding-right: 10px; 
 }
-
 .logo {
   height: 100px;
   width: 300px;
@@ -277,9 +276,14 @@ nav a:hover {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
+nav a:focus {
+  color: #d94747;
+  border-top-color: #d94747;
+}
+
 nav a#openup {
   display: none;
-}ƒ
+}
 
 
 /* Cards Section */
@@ -293,7 +297,7 @@ nav a#openup {
 .container-bottom-right{
   width: 800px;
   height: 800px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -302,7 +306,7 @@ nav a#openup {
 }
 .container-bottom-right h2{
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .container-bottom-right p{
   font-weight: 100;
@@ -349,9 +353,9 @@ section.confiance-next {
 }
 
 .confiance-container-bottom-right{
-  width: 800px;
-  height: 800px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -361,7 +365,7 @@ section.confiance-next {
 }
 .confiance-container-bottom-right h2{
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .confiance-container-bottom-right p{
   font-weight: 100;
@@ -370,12 +374,12 @@ section.confiance-next {
 
 .confiance-container-bottom-left {
   width: 408px;
-  height: 482px;
+  height: 382px;
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
-  right: -40%;
-  padding: 100px 0px 50px 50px;
+  right: -30%;
+  padding: 20px 20px;
   z-index: 1;
 }
 .confiance-container-bottom-left {
@@ -394,12 +398,12 @@ section.confiance-next {
   overflow-x:hidden;
 }
 .confiance-container-bottom-left ul {
-  padding: 50px 0; 
-  font-size: 1rem;
+  padding: 50px 20px; 
+  font-size: 22px;
 }
 .confiance-container-bottom {
   position: absolute;
-  bottom: 0px;
+  
   left: 20px;
   padding: 50px 50px;
   color: #5B86B0;
