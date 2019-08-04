@@ -9,9 +9,15 @@
   --light-color: #f4f4f4;
   --title-color: #000000;
 }
-
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: normal;
+  src: url('AvenirLTStd-Medium.woff') format('woff');
+  }
+  
 body {
-  font-family: 'Helvetica','PT Sans', sans-serif;
+  font-family: 'Avenir','Helvetica','PT Sans', sans-serif;
   background-color: #252529;
   margin: 0;
   color: #fff;
@@ -225,7 +231,7 @@ nav {
   position: fixed;
   padding: 0 0;
   z-index: 2;
-  
+  box-shadow: 0px 5px 6px black;
 }
 
 nav ul{
@@ -284,7 +290,104 @@ nav a:focus {
 nav a#openup {
   display: none;
 }
+#mdr {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  text-decoration: none;
+  text-decoration-style: none;
+  border-top: none;
+}
 
+
+#mdr a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#mdr a:hover {
+  color: #222222
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.dd-menu li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
 
 /* Cards Section */
 .card-title {
@@ -416,10 +519,6 @@ section.confiance-next {
   display: none;
 }
 
-.slide img {
-  width: 100px;
-  height: 200px;
-}
 #Contact {
   height: 90vh;
   width: 100%;

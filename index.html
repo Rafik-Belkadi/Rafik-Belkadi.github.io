@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,13 +29,32 @@
                 </div>
                 <div>
                   <p style="left: 73px; width: 209px; position: absolute; pointer-events: none; top: 30px;">TRANS MS
-                    </p>
+                  </p>
                 </div>
               </li>
             </div>
-            <div class="col-md-12 cf" style="margin-top: 50px;">
+            <label class="dropdown">
+
+                <div class="dd-button">
+                  Language
+                </div>
+
+                <input type="checkbox" class="dd-input" id="test">
+                <ul class="dd-menu">
+                    <li class="divider"></li>
+                  <br>
+                  <br>
+                  <li><a href="/en/index.html"><img src="/img/en.png" style="width:20px; height: 20px;" alt=""> English </a></li>
+                  <li><a href="/index.html"><img src="/img/fr.png" style="width:20px; height: 20px;" alt=""> French</a></li>
+                  
+                </ul>
+              </label>
+            <div class="col-md-12 cf" style="margin-top: -20px;">
               <li>
                 <a href='contact.html' class="scrollTo">Nous Contacter</a>
+              </li>
+              <li>
+                <a href='#Clients' class="scrollTo">Nos Clients</a>
               </li>
               <li>
                 <a href='#confiance' class="scrollTo">Nous faire Confiance</a>
@@ -48,8 +66,10 @@
               <li class="hide-on-small">
                 <a href="#showcase" class="scrollTo">Acceuil</a>
               </li>
+             
             </div>
           </ul>
+
           <a href='#' id='openup'>Trans MS</a>
         </nav>
       </div>
@@ -68,7 +88,7 @@
       <div class="container ">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="card" style="width:20rem;margin:20px 0 24px 0; height: 100%;">
+            <div class="card" style="width:20rem;margin: 40px 0 24px 0; height: 100%;">
               <img class="card-img-top" src="img/contenaire.webp" alt="image" style="width:100%">
               <div class="card-body bg-grey">
                 <h4 class="card-title title-secondary">DEDOUANEMENT VOIE <br><br> MARITIME</h4>
@@ -85,7 +105,7 @@
 
           </div>
           <div class="col-md-6">
-            <div class="card" style="width:20rem;margin:20px 0 24px 0; height: 100%">
+            <div class="card" style="width:20rem;margin:40px 0 24px 0; height: 100%">
               <img class="card-img-top" src="img/bateau-avion.jpg" alt="image" style=" width: 318px; height: 240px;">
               <div class="card-body bg-grey">
                 <h4 class="card-title title-secondary">DEDOUANEMENT VOIE <br><br> AERIENNE</h4>
@@ -164,7 +184,8 @@
     <div class="confiance-container-bottom-right hide-on-small">
       <div>
         <h1 style="font-size: 50px;">SARL TRANS INTERGLOB</h1>
-        <p style="font-size: 25px; line-height: 1.9;margin-top: 50px;">Ayant pour objectif principal la satisfaction et le contentement
+        <p style="font-size: 25px; line-height: 1.9;margin-top: 50px;">Ayant pour objectif principal la satisfaction et
+          le contentement
           de nos clients, la SARL TRANS MS  a fonder
           une seconde société la SARL TRANS INTERGLOB assurant ainsi le transport de la marchandise de différents
           points de dédouanement jusqu’au site ou la destination choisis par le client</p>
@@ -178,32 +199,31 @@
         <ul>
           <li>Camion semi remorque</li>
           <li>Porte char</li>
-          <li>Croutons</li>
+          <li>Fourgons</li>
         </ul>
       </div>
-      
+
     </div>
     <div class="confiance-container-bottom-left hide-on-big">
       <h2>NOS MOYENS :</h2>
       <ul>
         <li>Camion semi remorque</li>
         <li>Porte char</li>
-        <li>Croutons</li>
+        <li>Fourgons</li>
       </ul>
     </div>
   </section>
   <!-- Clients Section -->
-  <section id="confiance" class="section bg-light">
+  <section id="Clients" class="section bg-light">
     <div class="container confiance">
       <h1 class="title-primary" style="font-size: 2rem; font-weight: bold;">Nous Comptons parmis nos nombeurx clients</h1>
       <div class="container center" style="margin-top: 70px;">
-        <section class="customer-logos slider" >
+        <section class="customer-logos slider" style="text-align: center;">
           <div class="slide"><img src="img/image1.png"></div>
-          <div class="slide"><img src="img/image2.png"></div>
-          <div class="slide"><img src="img/image3.png"></div>
-          <div class="slide"><img src="img/image4.png"></div>
-          <div class="slide"><img src="img/image5.png"></div>
-          <div class="slide"><img src="img/image6.jpg"></div>
+          <div class="slide"><img style="height:200px; width: 150px; margin-top: 30px;" src="img/image2.png"></div>
+          <div class="slide"><img style="height:250px; width: 200px; " src="img/image4.png"></div>
+          <div class="slide"><img style="margin-top: 60px; " src="img/image5.png"></div>
+          <div class="slide"><img style="margin-top: 60px;" src="img/image6.jpg"></div>
       </div>
   </section>
   <!-- Footer -->
