@@ -6,7 +6,7 @@
   --primary-color-hover: #d3071b;
   --secondary-color: #3D5975;
   --secondary-color-hover: #143f85;
-  --light-color: #f4f4f4;
+  --light-color:#ffffff;
   --title-color: #000000;
 }
 @font-face {
@@ -20,7 +20,7 @@ body {
   font-family: 'Avenir','Helvetica','PT Sans', sans-serif;
   background-color: #252529;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   line-height: 1.6;
   width: 100%;
 }
@@ -31,7 +31,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #ccc;
+  color: #ffffff;
 }
 
 /* Section */
@@ -96,7 +96,7 @@ section#entertainment {
 #showcase h1 {
   font-size: 2rem;
   margin-bottom: 0;
-  color: var(--light-color);
+  color: #ffffff;
   top: 100px;
 }
 
@@ -117,12 +117,12 @@ footer .footer-cols ul {
 footer .footer-cols ul li:first-child {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
-  border-bottom: var(--light-color) solid 1px;
+  border-bottom: #ffffff solid 1px;
   margin-bottom: 1rem;
 }
 
 footer .footer-bottom {
-  background: var(--light-color);
+  background: #ffffff;
   padding: 1rem;
 }
 
@@ -145,7 +145,7 @@ footer .footer-bottom {
 /* Buttons */
 .btn {
   padding: 1rem;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
 }
 
@@ -207,8 +207,8 @@ footer .footer-bottom {
 }
 
 .bg-light {
-  background: var(--light-color);
-  color: var(--light-color);
+  background: #ffffff;
+  color: #ffffff;
 }
 .bg-grey  {
   background: rgba(247, 247, 247, 1);
@@ -426,7 +426,7 @@ nav a#openup {
 }
 .container-bottom-left div {
   position: absolute;
-  color: #fff
+  color: #ffffff;
 }
 .container-bottom-left div h1 {
   float: left;
@@ -487,7 +487,7 @@ section.confiance-next {
 }
 .confiance-container-bottom-left {
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
 }
 .confiance-container-bottom-left div h1 {
@@ -542,14 +542,14 @@ section.confiance-next {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #fff;
+  background: #ffffff;
   color: #333;
   transition: .5s ease all;
 }
 #contact-form button {
   display: block;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   border-radius: 4px;
   padding: 5px 10px;
   border: none;
@@ -668,7 +668,7 @@ section.confiance-next {
   font-size: 1rem;
 }
 .white{
-  color: #fff;
+  color: #ffffff;
 }
 .confiance-container-bottom-left{
   position: absolute;
