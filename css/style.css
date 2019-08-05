@@ -22,6 +22,7 @@ body {
   margin: 0;
   color: #ffffff;
   line-height: 1.6;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -94,7 +95,8 @@ section#entertainment {
 }
 
 #showcase h1 {
-  font-size: 2rem;
+  font-size: 36px;
+  font-weight: bold;
   margin-bottom: 0;
   color: #ffffff;
   font-weight: bold;
@@ -394,7 +396,7 @@ nav a#openup {
 .card-title {
   text-align: left;
   font-size: 1rem;
-  padding: 50px 0 50px 0; 
+  padding: 30px 0 30px 0; 
 }
 
 /* after cards section */
@@ -477,12 +479,12 @@ section.confiance-next {
 }
 
 .confiance-container-bottom-left {
-  width: 408px;
+  width: 350px;
   height: 382px;
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
-  right: -30%;
+  right: -25%;
   padding: 20px 20px;
   z-index: 1;
 }
@@ -521,20 +523,23 @@ section.confiance-next {
 }
 
 #Contact {
-  height: 90vh;
+  padding: 100px 0px 100px 0px;
+  height: 120vh;
   width: 100%;
   background-color: #d94747;
 }
 #contact-div {
-  padding: 50px 15px;
+  padding: 30px 15px;
   text-align: center;
   display: block;
+  
 }
 
 #contact-form {
   max-width: 500px;
   margin: auto;
   padding-top: 50px;
+  
 }
 #contact-form input, #contact-form textarea {
   display: block;
@@ -564,8 +569,14 @@ section.confiance-next {
   padding: 15px 60px;
 }
 .contact-local{
-  padding-top: 50px;
+  padding: 30px 30px;
+  border-left:5px solid #ffffff;
 }
+.pad-image {
+  padding: 50px 50px;
+}
+
+
 @media screen and (max-width: 580px) {
   body, html { overflow-x:hidden; }
   .hide-on-small {
@@ -647,6 +658,7 @@ section.confiance-next {
 .title-primary{
   padding: 0;
   font-size: 2rem;
+  font-weight: bold;
 }
 #Transport .container{
   padding: 0;
