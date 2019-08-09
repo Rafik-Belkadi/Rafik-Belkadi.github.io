@@ -279,6 +279,7 @@ nav a {
   border-top: 2px solid #333;
   text-decoration: none;
   text-decoration-style: none;
+  font-size: 16px;
 }
 
 nav a:hover {
