@@ -270,7 +270,6 @@ nav li {
 }
 nav a {
   display: inline-block;
-  width: 150px;
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
@@ -279,7 +278,8 @@ nav a {
   border-top: 2px solid #333;
   text-decoration: none;
   text-decoration-style: none;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 nav a:hover {
