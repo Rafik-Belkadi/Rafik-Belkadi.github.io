@@ -326,7 +326,7 @@ nav a#openup {
 
 .dd-button {
   display: inline-block;
-  border: 1px solid gray;
+  border-bottom: 1px solid gray;
   border-radius: 4px;
   padding: 10px 30px 10px 20px;
   background-color: #ffffff;

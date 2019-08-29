@@ -54,3 +54,14 @@ $(document).ready(function(){
     }]
   });
 });
+var fr = '<img src="/img/fr.png" style="width:20px; height: 20px;" alt="">';
+var en = '<img src="/img/en.png" style="width:20px; height: 20px;" alt="">';
+var language_icon = document.getElementById("lang");
+
+var href = window.location.href;
+
+if(href == 'http://127.0.0.1:5500/index.html'){
+  language_icon.innerHTML = fr;
+}else {
+  language_icon.innerHTML = en;
+}
