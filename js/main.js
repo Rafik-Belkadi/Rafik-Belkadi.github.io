@@ -60,7 +60,7 @@ var language_icon = document.getElementById("lang");
 
 var href = window.location.href;
 
-if(href == 'http://127.0.0.1:5500/index.html'){
+if (href == 'http://transms-algerie.com/'){
   language_icon.innerHTML = fr;
 }else {
   language_icon.innerHTML = en;
