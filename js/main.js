@@ -60,7 +60,7 @@ var language_icon = document.getElementById("lang");
 
 var href = window.location.href;
 
-if (href == 'http://transms-algerie.com/' || href == 'http://transms-algerie.com/index.html'){
+if (href == 'http://transms-algerie.com/' || href == 'http://transms-algerie.com/index.html' || href == 'http://transms-algerie.com/contact.html'){
   language_icon.innerHTML = fr;
 }else {
   language_icon.innerHTML = en;
