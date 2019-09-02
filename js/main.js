@@ -56,7 +56,7 @@ $(document).ready(function(){
 });
 var fr = '<img src="/img/fr.png" style="width:20px; height: 20px;" alt="">';
 var en = '<img src="/img/en.png" style="width:20px; height: 20px;" alt="">';
-var language_icon = document.getElementById("lang");
+var language_icon = document.getElementsByClassName("dd-button");
 
 var href = window.location.href;
 
